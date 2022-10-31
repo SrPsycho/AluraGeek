@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/login.css">
+    <link rel="stylesheet" href="/assets/css/agregar.css">
+    <title>Agregar producto</title>
+</head>
+<body>
+    <header>
+        <div class="logoBuscador">
+            <a href="/index.html"><img src="/assets/img/logo.png" alt="Logo de AluraGeek" class="logo"></a>
+            <div class="buscador">
+             <textarea id="text_buscador" cols="25" rows="1" placeholder="¿Qué deseas buscar?"></textarea>
+             <button type="submit" class="btn_lupa"><img src="/assets/icons/lupa.svg" class="icon_buscador"></button>
+            </div>
+        </div>
+        <a href="/pages/login.html"><button class="login">Login</button></a>
+         
+    </header>
+    <main>
+        <h2 class="titulo_ingreso">Agregar producto</h2>
+        <div class="forms">
+            <input type="url" id="urlFoto" placeholder="URL de la imagen" class="input_ingreso" required>
+            <select name="Categoria" id="categoria" class="input_ingreso">
+                <option value="0">Categoria</option>
+                <option value="1">Star Wars</option>
+                <option value="2">Consolas</option>
+                <option value="3">Diversos</option>
+            </select>
+            <input type="text" id="tituloProd" placeholder="Nombre del producto" class="input_ingreso" required>
+            <input type="text" id="precioPro" placeholder="Precio" class="input_ingreso" required>
+            <textarea name="descripcion__producto" id="descProducto" cols="30" rows="10" placeholder="Descripcion"></textarea>
+        </div>
+        <a href="/index.html"><input type="button" value="Agregar" class="btn_ingreso"></a>
+        
+    </main>
+    <footer>
+        <div class="organizador">
+            <img src="/assets/img/logo.png" alt="Logo de AluraGeek" class="logo_footer">
+            <div class="secciones">
+                <ul class="secciones">
+                    <li>Quienes somos</li>
+                    <li>Politicas de privacidad</li>
+                    <li>Programa de fidelidad</li>
+                    <li>Nuestras Tiendas</li>
+                    <li>Quiero ser franquiciado</li>
+                    <li>Quien lee todo esto?</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contacto">
+            <h2 class="tituloFooter">Hable con nosotros</h2>
+            <input type="text" class="nombreFooter" placeholder="Nombre">
+            <textarea id="mensajeFooter" cols="30" rows="6" placeholder="Escriba su mensaje"></textarea>
+            <button class="btn_banner">Enviar Mensaje</button>
+        </div>
+    </footer>
+    <section class="creditos">
+        <h2>Desarrollado Por Matias Hausen</h2>
+        <p>2022</p>
+    </section>
+</body>
+</html>

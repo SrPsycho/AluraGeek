@@ -1,0 +1,72 @@
+:root{
+    --blanco_items:#F5F5F5;
+    --azul:#2A7AE4;
+    --celeste:#EAF2FD;
+    --gris: #464646;
+    --todo:'Raleway', sans-serif;
+ }
+ html,body{
+    overflow-x: hidden;
+ }
+
+ body{
+    background-color: var(--blanco_items);
+ }
+ main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo_ingreso{
+    margin-top: 5%;
+    font-family: var(--todo);
+    font-weight: 700;
+    font-size: 2rem;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input_ingreso{
+    width: 450px;
+    height: 50px;
+    margin-top: 15px;
+    border: none;
+    padding: 5px;
+    background-color: white;
+}
+.input_ingreso:hover{
+    border: 2px solid var(--azul);
+    transition-duration: 100ms;
+}
+.btn_ingreso,.btn_registro{
+    cursor: pointer;
+    margin-top: 15px;
+    border: none;
+    background-color: var(--azul);
+    color: white;
+    width: 450px;
+    height: 50px;
+}
+.btn_registro{
+    background-color: var(--gris);
+}
+.btn_ingreso:hover,.btn_registro:hover{
+    transform: scale(1.1);
+    transition-duration: 400ms;
+}
+@media (max-width: 468px) {
+    .input_ingreso,.btn_ingreso,.btn_registro{
+        width: 300px;
+        height: 50px;
+    }
+}
+@media (max-width: 338px) {
+    .input_ingreso,.btn_ingreso,.btn_registro{
+        width: 250px;
+        height: 50px;
+    }
+}
